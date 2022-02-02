@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var word = prompt("enter the string: ");
+
+        var wordLenght = word.length;
+        var new_word = "";
+
+        for(var i = 0 ; i < wordLenght; i ++){
+            if(i % 2 == 1){
+                new_word += word[i];
+            }
+        }
+        alert("the new string  at odd index is : " + new_word)
+        // document.write(new_word)
+
+    </script>
+</body>
+</html>

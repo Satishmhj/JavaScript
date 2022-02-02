@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var element  = prompt("enter the element:  ");
+
+        // var element_array = element.split("")
+        var s;
+
+        function lastElement(element) {
+
+            for(var i = 0 ; i < element.length; i++){
+
+             s = element[element.length - 1 ]
+            console.log("the last element of "+ element +" is : " + s)
+            break;
+        }
+            return s; 
+        }
+
+        lastElement(element)
+        alert("the last element of " + element+ " is : " + s)
+    </script>
+</body>
+</html>

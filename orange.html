@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // JavaScript implementation of the approach
+        
+        // Function that returns true if the word is found
+        function isWordPresent(sentence, word)
+        {
+            // To break the sentence in words
+            let s = sentence.split(" ");
+        
+            // To temporarily store each individual word
+            for ( let temp=0;temp<s.length;temp++)
+            {
+        
+                // Comparing the current word
+                // with the word to be searched
+                if (s[temp] == (word) )
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        
+        // Driver code
+        var s = prompt("enter the sentence : ");
+        var word = prompt("enter the word to check in sentencess: ")
+        
+        if (isWordPresent(s, word))
+                document.write("Yes, there is a word : " + word + " in the sentence : " + s);
+            else
+                document.write("No,there is no word");
+        </script>
+        
+</body>
+</html>

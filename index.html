@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter the string" id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            //calculating Length
+            var inputLength = inputVal.length;
+          
+            // Displaying the value
+            document.writeln("The Length of String is:" +inputLength);
+                        
+			var str = inputVal;
+			var res = str.charAt(str.length-1);
+			
+			// display last character
+            document.writeln("the last characterof input string is :" + res);
+					
+		}
+            
+        
+        
+    </script>
+</body>
+</html>

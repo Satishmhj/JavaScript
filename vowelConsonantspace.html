@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      function countCharacterType(str) {
+        
+        var vowels = 0,
+          consonant = 0,
+          specialChar = 0,
+          digit = 0;
+
+        // str.length() function to count number of character in given string.
+        for (var i = 0; i < str.length; i++) {
+          var ch = str[i];
+
+          if ((ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z")) {
+            // To handle upper case letters
+            ch = ch.toLowerCase();
+
+            if (ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u")
+              vowels++;
+            else consonant++;
+          } else if (ch >= "0" && ch <= "9") digit++;
+          else specialChar++;
+        }
+        document.write("Vowels: " + vowels + "<br>");
+        document.write("Consonant: " + consonant + "<br>");
+        document.write("Digit: " + digit + "<br>");
+        document.write("Special Character: " + specialChar + "<br>");
+      }
+
+      // Driver function.
+      var str = "JavaScript:  a scripting languages";
+      countCharacterType(str);
+    </script>
+  </body>
+</html>

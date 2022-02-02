@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let upper= 0, lower = 0  ;
+
+        var str = prompt("Enter the String ");
+        for(var i = 0 ; i < str.length- 1; i ++){
+            var ch = str.charAt(i);
+            if(ch>='A' && ch<='Z'){
+                 upper++;
+                }
+                    else if(ch>='a' && ch<='z'){
+                    lower++;
+                                    }
+        }
+
+        alert("lower letter: " + lower + "UpperLetter: " + upper);
+    </script>
+    
+</body>
+</html>
